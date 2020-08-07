@@ -12,7 +12,7 @@ node 'master.puppet.vm' {
  include role::master_server
  file {'/root/README':
   ensure => file,
-  content => "welcome to ${fqdn}\n",
+  content => "welcome to ${os}\n",
  }
 }
 node /^web/ {
